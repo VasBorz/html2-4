@@ -1,0 +1,60 @@
+body{
+    font-family: "Myriad Pro", Arial, serif;
+}
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+/* HEADER */
+.main-header{
+    padding: 30px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    font-size: 1.3em;
+}
+.bottom-header__menu ul{
+    float: left;
+    font-weight: bold;
+    color: #6c6c6c;
+}
+.bottom-header__menu ul li{
+    padding-right: 30px;
+}
+.bottom-header__socials ul{
+    float: right;
+}
+.bottom-header__socials ul li{
+    padding-left: 25px;
+}
+.main-header__contacts ul li{
+    padding-left: 30px;
+    max-width: 350px;
+}
+.main-header__contacts ul i{
+    float: left;
+    background-color: #1a9bdc;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.main-header__contacts ul i:before{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.main-header__contacts ul li span{
+    display: inline-block
+}
+.main-header__contacts_uppercase{
+    text-transform: uppercase;
+    font-weight: 700;
+}
