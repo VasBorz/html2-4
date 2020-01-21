@@ -15,12 +15,12 @@
 </head>
 <body>
 <div class="container">
-    <header>
-        <div class="main-header border-bottom row">
-            <div class="main-header__logo col-md-3">
+    <header >
+        <div class="main-header border-bottom grid">
+            <div class="main-header__logo">
                 <img src="img/logo.png" alt="">
             </div>
-            <div class="main-header__contacts col-md-9">
+            <div class="main-header__contacts">
                 <ul>
                     <li>
                         <i class="far fa-clock rounded-circle"></i>
@@ -70,28 +70,35 @@
             <button class="slide-show__content_button">Read More</button>
         </div>
     </div>
-    <div class="row">
-        <aside class="icon-box col-md-3">
+    <div class="grid section-icon-box" id="section-icon-box">
+        <aside class="section-icon-box__box">
             <i class="fas fa-stethoscope"></i>
             <h3>Best Treatment</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </aside>
-        <aside class="icon-box col-md-3">
+        <aside class="section-icon-box__box">
             <i class="fas fa-phone"></i>
             <h3>Emergency Help</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </aside>
-        <aside class="icon-box col-md-3">
+        <aside class="section-icon-box__box">
             <i class="fas fa-clinic-medical"></i>
             <h3>Medical Staff</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </aside>
-        <aside class="icon-box col-md-3">
+        <aside class="section-icon-box__box">
             <i class="fas fa-ambulance"></i>
             <h3>Qualified Doctors</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </aside>
     </div>
+    <div id="clear"></div>
+    <script>
+        let height = document.getElementById('section-icon-box').clientHeight;
+
+            document.getElementById('clear').setAttribute('style','height:' + height + 'px;');
+    </script>
+    <div> <h2>About us</h2></div>
 </div>
 
 <!-- Optional JavaScript -->

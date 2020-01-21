@@ -8,10 +8,14 @@ ul {
     padding: 0;
     list-style: none;
 }
+.grid{
+    display: grid;
+}
 /* HEADER */
 .main-header{
     padding: 30px 0;
     border-bottom: 1px solid #e1e1e1;
+    grid-template: 1fr / 2fr 10fr;
 }
 .bottom-header{
     display: flex;
@@ -73,7 +77,7 @@ ul {
     justify-content: flex-end;
 }
 .main-header__contacts ul li{
-    padding-left: 30px;
+    padding-left: 50px;
     max-width: 410px;
 }
 .main-header__contacts ul i{
@@ -143,24 +147,29 @@ ul {
     background-color: #1b7eb0;
     transition: 300ms;
 }
-.icon-box{
+.section-icon-box{
+   grid-template: 1fr / repeat(4,1fr);
+    position: absolute;
+    left: 0;
+}
+.section-icon-box__box{
     text-align: center;
     color: #fff;
     padding: 40px;
 }
-.icon-box:nth-child(1){
+.section-icon-box__box:nth-child(1){
     background-color: #43b1d2;
 }
-.icon-box:nth-child(2){
+.section-icon-box__box:nth-child(2){
     background-color: #3fb6c6;
 }
-.icon-box:nth-child(3){
+.section-icon-box__box:nth-child(3){
     background-color: #3cbbbb;
 }
-.icon-box:nth-child(4){
+.section-icon-box__box:nth-child(4){
     background-color: #37c3a8;
 }
-.icon-box i{
+.section-icon-box__box i{
     font-size:2em;
     background-color: white;
     position: relative;
@@ -169,9 +178,12 @@ ul {
     color: #222222;
     border-radius: 50%;
 }
-.icon-box i:before{
+.section-icon-box__box i:before{
     position: absolute;
     top: 18px;
     left: 18px;
+}
+.clear{
+    height: 310px;
 }
 
