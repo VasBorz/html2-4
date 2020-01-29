@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>CorePoint Medical Theme</title>
@@ -94,11 +94,71 @@
     </div>
     <div id="clear"></div>
     <script>
-        let height = document.getElementById('section-icon-box').clientHeight;
-
-            document.getElementById('clear').setAttribute('style','height:' + height + 'px;');
+        function reportWindowSize() {
+            document.getElementById('clear').setAttribute('style','height:' + document.getElementById('section-icon-box').clientHeight + 'px;');
+        }
+        window.onload = reportWindowSize;
+        window.onresize = reportWindowSize;
     </script>
-    <div> <h2>About us</h2></div>
+    <div class="grid chose-us">
+        <div class="chose-us__title">
+            <h2>Why Choose Us?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore ducimus earum eius excepturi inventore molestias porro rerum ullam velit?</p>
+        </div>
+        <div class="chose-us__icons">
+            <div class="chose-us__icons_element">
+               <i class="fas fa-capsules rounded-circle"></i>
+               <h3>Professionals</h3>
+               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+           </div>
+            <div class="chose-us__icons_element">
+                <i class="fas fa-vial rounded-circle"></i>
+                <h3>Professionals</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+        </div>
+        <div class="chose-us__img">
+            <img src="img/nurse.png" alt="Nurse">
+        </div>
+        <div class="chose-us__icons">
+            <div class="chose-us__icons_element">
+                <i class="far fa-hospital rounded-circle"></i>
+                <h3>Professionals</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+            <div class="chose-us__icons_element">
+                <i class="fas fa-stethoscope rounded-circle"></i>
+                <h3>Professionals</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+        </div>
+    </div>
+    <div class="icon-box2">
+        <div class="icon-box2__element">
+            <i class="fas fa-diagnoses"></i>
+            <span>1000+</span>
+            <div class="icon-box2__element_border"></div>
+            <h4>Happy Customers</h4>
+        </div>
+        <div class="icon-box2__element">
+            <i class="fas fa-heartbeat"></i>
+            <span>1000+</span>
+            <div class="icon-box2__element_border"></div>
+            <h4>Happy Customers</h4>
+        </div>
+        <div class="icon-box2__element">
+            <i class="fas fa-helicopter"></i>
+            <span>1000+</span>
+            <div class="icon-box2__element_border"></div>
+            <h4>Happy Customers</h4>
+        </div>
+        <div class="icon-box2__element">
+            <i class="fas fa-capsules"></i>
+            <span>1000+</span>
+            <div class="icon-box2__element_border"></div>
+            <h4>Happy Customers</h4>
+        </div>
+    </div>
 </div>
 
 <!-- Optional JavaScript -->
