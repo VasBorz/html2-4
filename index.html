@@ -94,11 +94,11 @@
     </div>
     <div id="clear"></div>
     <script>
-        function reportWindowSize() {
-            document.getElementById('clear').setAttribute('style','height:' + document.getElementById('section-icon-box').clientHeight + 'px;');
+        function reportWindowSize(getElement, setElement) {
+            document.getElementById(getElement).setAttribute('style','height:' + document.getElementById(setElement).clientHeight + 'px;');
         }
-        window.onload = reportWindowSize;
-        window.onresize = reportWindowSize;
+        window.onload = reportWindowSize('clear','section-icon-box');
+        window.onresize = reportWindowSize('clear','section-icon-box');
     </script>
     <div class="grid chose-us">
         <div class="chose-us__title">
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-    <div class="icon-box2">
+    <div class="icon-box2" id="icon-box2">
         <div class="icon-box2__element">
             <i class="fas fa-diagnoses"></i>
             <span>1000+</span>
@@ -157,6 +157,115 @@
             <span>1000+</span>
             <div class="icon-box2__element_border"></div>
             <h4>Happy Customers</h4>
+        </div>
+    </div>
+    <div id="clear2"></div>
+    <script>
+         window.onload = reportWindowSize('clear2','icon-box2');
+         window.onresize = reportWindowSize('clear2','icon-box2');
+    </script>
+    <div class="how-works">
+        <div class="how-works__title-left">
+            <h2>How we works</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+        <div class="how-works__title-right">
+            <h2>Our creative</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+        <div class="how-works__tabs">
+            <details>
+                <summary>Heart Treatment</summary>
+                <p>Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </details>
+            <details>
+                <summary>Heart Treatment</summary>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </details>
+            <details>
+                <summary>Heart Treatment</summary>
+                <p>Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </details>
+            <details>
+                <summary>Heart Treatment</summary>
+                <p>Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </details>
+        </div>
+        <div class="how-works__posts">
+            <div class="how-works__posts_item">
+                <img src="img/Layer17.jpg" alt="post">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <span>April 19,2020  |  Dr. Jon Doe</span>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+            <div class="how-works__posts_item">
+                <img src="img/Layer18.jpg" alt="post">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <span>April 19,2020  |  Dr. Jon Doe</span>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+        </div>
+        <div class="how-works__button">
+            <button>Read More</button>
+        </div>
+    </div>
+    <div class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <img src="img/01.png" alt="">
+        <img src="img/02.png" alt="">
+        <img src="img/03.png" alt="">
+        <img src="img/04.png" alt="">
+        <img src="img/05.png" alt="">
+        <img src="img/06.png" alt="">
+    </div>
+    <div id="clear3"></div>
+    <script>
+        window.onload = reportWindowSize('clear3','gallery');
+        window.onresize = reportWindowSize('clear3','gallery');
+    </script>
+    <div class="our-team">
+        <h2>Our Team</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <div class="our-team__member">
+            <img src="img/Ellipse-1.png" alt="">
+            <h4>Assistant Surgeon</h4>
+            <span>Assistant Surgeon</span>
+            <div class="our-team__member_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+            </div>
+        </div>
+        <div class="our-team__member">
+            <img src="img/Ellipse-2.png" alt="">
+            <h4>Assistant Surgeon</h4>
+            <span>Assistant Surgeon</span>
+            <div class="our-team__member_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+            </div>
+        </div>
+        <div class="our-team__member">
+            <img src="img/Ellipse-3.png" alt="">
+            <h4>Assistant Surgeon</h4>
+            <span>Assistant Surgeon</span>
+            <div class="our-team__member_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+            </div>
+        </div>
+        <div class="our-team__member">
+            <img src="img/Ellipse-4.png" alt="">
+            <h4>Assistant Surgeon</h4>
+            <span>Assistant Surgeon</span>
+            <div class="our-team__member_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+            </div>
         </div>
     </div>
 </div>
