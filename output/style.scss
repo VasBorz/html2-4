@@ -9,14 +9,14 @@
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 30px;
-    box-shadow: 1px 1px 20px #6d9ebe;
+    box-shadow: 1px 1px 15px #6d9ebe;
     border:none;
+    transition-duration: $transition;
     &:focus{
         outline: none;
     }
     &:hover{
         background-color: $main-light;
-        transition: $transition;
         //-moz-transform: translate(0, -2px);
         //-ms-transform: translate(0, -2px);
         //-o-transform: translate(0, -2px);
@@ -75,6 +75,10 @@ body{
                     width: 50px;
                     height: 50px;
                     margin-right: 15px;
+                    transition-duration: $transition;
+                    &:hover{
+                        transform: rotate(360deg) scale(1.1, 1.1);
+                    }
                 }
             }
 
@@ -145,13 +149,18 @@ body{
             display: flex;
             margin-bottom: 0;
             li{
-                padding-left: 25px;
+                margin-left: 25px;
+                transition-duration: $transition;
                 a{
                     color: $text-dark;
                 }
                 &:hover{
                     color: $text;
-                    transition: $transition;
+                    transform: scale(1.2,1.2);
+
+                }
+                &:nth-child(1){
+                    margin-left: 0;
                 }
             }
         }
@@ -170,8 +179,8 @@ body{
         position: absolute;
         left: 0;
         z-index: -2;
-        max-width: 100%;
-        object-fit: none;
+        width: 100%;
+        object-fit: cover;
         height: max-content;
     }
     .slide-show__content{
@@ -455,6 +464,7 @@ body{
             padding: 0 0 20px 0;
             color: $text;
             border-radius: 30px;
+            transition-duration: $transition;
             &[open] summary ~ *{
                 animation: open .5s ease-in-out;
             }
@@ -468,11 +478,11 @@ body{
                 vertical-align: center;
                 display: flex;
                 line-height: 2.0em;
+                transition-duration: $transition;
                 &:focus{
                     outline: none;
                     background-color: $main;
                     color: $white;
-                    transition: $transition;
                 }
                 &::-webkit-details-marker{
                     padding: 15px;
@@ -533,10 +543,40 @@ body{
         grid-area: 2/1/2/4;
         line-height: 2em;
     }
-    img{
-       &:nth-child(-n+3){
-           margin-bottom: 10px;
-       }
+    .gallery__flip-box {
+        background-color: transparent;
+        perspective: 1000px;
+        width: 100%;
+        height: 220px;
+        .gallery__flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            .gallery__flip-box-front{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        &:hover .gallery__flip-box-inner {
+            transform: rotateY(180deg);
+        }
+        .gallery__flip-box-front, .gallery__flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        .gallery__flip-box-back {
+            height: 200px;
+            padding-top: 40px;
+            background-color: $main;
+            color: white;
+            transform: rotateY(180deg);
+        }
     }
 }
 @media all and(max-width: $breakpoint-tablet) {
@@ -725,6 +765,10 @@ footer{
             font-size: 1.6em;
             i{
                 padding-right: 20px;
+                transition-duration: $transition;
+                &:hover{
+                    transform: scale(1.2,1.2);
+                }
             }
         }
     }
@@ -739,9 +783,11 @@ footer{
                 color: $text;
                 border: none;
                 border-bottom: 1px solid $text;
+                transition-duration: $transition;
                 padding: 15px 0;
                 &:focus{
                     outline: none;
+                    border-bottom: 1px solid $main;
                 }
                 &::placeholder {
                     color: $text;
@@ -768,6 +814,13 @@ footer{
                    line-height: 0;
                }
                padding-bottom: 20px;
+               a{
+                   color: $text_light;
+                   transition-duration: $transition;
+                   &:hover{
+                       color: $main;
+                   }
+               }
            }
         }
     }
