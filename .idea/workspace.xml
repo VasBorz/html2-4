@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/output/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/output/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <updated>1579513026798</updated>
       <workItem from="1579513030159" duration="16856000" />
       <workItem from="1579723539624" duration="3577000" />
-      <workItem from="1580305489394" duration="44760000" />
+      <workItem from="1580305489394" duration="48511000" />
     </task>
     <servers />
   </component>
