@@ -1031,11 +1031,6 @@ body .grid {
   line-height: 2em;
 }
 
-.our-team img {
-  max-width: 240px;
-  padding-bottom: 20px;
-}
-
 .our-team .our-team__member h4 {
   font-size: 1.4em;
   letter-spacing: 1px;
@@ -1060,7 +1055,7 @@ body .grid {
 
 .our-team .our-team__member .our-team__member_image {
   position: relative;
-  height: 260px;
+  height: 300px;
   max-width: 240px;
   transition-duration: 300ms;
 }
@@ -1076,10 +1071,12 @@ body .grid {
 .our-team .our-team__member .our-team__member_image img {
   position: absolute;
   left: 50%;
-  margin-left: -120px;
+  margin-left: -110px;
   top: 50%;
-  margin-top: -120px;
+  margin-top: -110px;
   transition-duration: 0.5s;
+  max-width: 240px;
+  padding-bottom: 40px;
 }
 
 .our-team .our-team__member .our-team__member_image .our-team__member_mask {
@@ -1089,7 +1086,7 @@ body .grid {
   justify-content: center;
   top: 50%;
   left: 50%;
-  transform: scale(0.2, 0.2) translateY(-100px);
+  transform: scale(0, 0) translateY(-100px);
   transition-duration: 0.5s;
   margin-top: -110px;
   margin-left: -110px;
@@ -1098,7 +1095,7 @@ body .grid {
   height: 220px;
   width: 220px;
   border-radius: 50%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .our-team .our-team__member .our-team__member_image .our-team__member_mask button {
@@ -1107,11 +1104,13 @@ body .grid {
   color: #6c6c6c;
   padding: 10px 30px;
   border-radius: 4px;
+  transition-duration: 300ms;
 }
 
 .our-team .our-team__member .our-team__member_image .our-team__member_mask button:hover {
-  box-shadow: 2px 2px 20px white;
+  box-shadow: 1px 1px 30px white;
   cursor: pointer;
+  transform: translateY(-5px);
 }
 
 @media all and (max-width: 1024px) {
