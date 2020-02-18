@@ -1,0 +1,45 @@
+.icon-box2 {
+  padding: 150px 0;
+  background: url("../img/background.png") no-repeat center / cover;
+  color: white;
+}
+
+/*
+.icon-box2 {
+  min-height: 580px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  display: grid;
+  grid-template: 1fr/repeat(4, 300px);
+  align-items: center;
+  justify-content: center;
+  color: white;
+}*/
+
+.icon-box2 .icon-box2__element {
+  text-align: center;
+  /*justify-self: center;*/
+  font-weight: bold;
+}
+
+.icon-box2 .icon-box2__element i {
+  margin-bottom: 20px;
+}
+
+.icon-box2 .icon-box2__element i, .icon-box2 .icon-box2__element span {
+  font-size: 3.4em;
+  display: block;
+}
+
+.icon-box2 .icon-box2__element h3 {
+  font-size: 25px;
+}
+
+.icon-box2 .icon-box2__element .icon-box2__element_border {
+  height: 6px;
+  width: 80px;
+  background-color: white;
+  /*text-align: center;*/
+  margin: 10px auto 20px;
+}
