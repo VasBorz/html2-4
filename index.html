@@ -8,58 +8,420 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>CorePoint Medical Theme</title>
 </head>
 <body>
 <div class="container">
-    <header>
-        <div class="main-header row">
-            <div class="main-header__logo col-md-3">
+    <header >
+        <div class="main-header border-bottom grid">
+            <div class="main-header__logo">
                 <img src="img/logo.png" alt="">
             </div>
-            <div class="main-header__contacts col-md-9">
+            <div class="main-header__contacts">
                 <ul>
                     <li>
-                        <i class="far fa-clock"></i>
+                        <i class="far fa-clock rounded-circle"></i>
                         <span class="main-header__contacts_uppercase">Work Time: 09:00-17:00</span>
                         <span>Saturday and Sunday - CLOSED</span>
                     </li>
                     <li>
-                        <i class="far fa-envelope"></i>
+                        <i class="far fa-envelope rounded-circle"></i>
                         <span class="main-header__contacts_uppercase">Mail Us</span>
                         <span>free@psdfreebies.com</span>
                     </li>
                     <li>
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-mobile-alt main-header__contacts_padding rounded-circle"></i>
                         <span class="main-header__contacts_uppercase">Call Us</span>
                         <span>+123 4567 8900</span>
                     </li>
                 </ul>
             </div>
         </div>
-        <nav class="bottom-header row">
-            <div class="bottom-header__menu col-md-8">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Gallery</li>
-                    <li>Blog</li>
-                    <li>Contact us</li>
+        <nav class="bottom-header navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="bottom-header__menu collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
                 </ul>
             </div>
             <div class="bottom-header__socials col-md-4">
                 <ul>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-google-plus-g"></i></li>
-                    <li><i class="fab fa-vk"></i></li>
-                    <li><i class="fab fa-youtube"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <div class="slide-show">
+        <img src="img/slide.png" alt="">
+        <div class="slide-show__content">
+            <h1>We gave Best Medicare plan options for you</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <button class="slide-show__content_button">Read More</button>
+        </div>
+    </div>
+    <div class="grid section-icon-box" id="section-icon-box">
+        <aside class="section-icon-box__box">
+            <i class="fas fa-stethoscope"></i>
+            <h3>Best Treatment</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </aside>
+        <aside class="section-icon-box__box">
+            <i class="fas fa-phone"></i>
+            <h3>Emergency Help</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </aside>
+        <aside class="section-icon-box__box">
+            <i class="fas fa-clinic-medical"></i>
+            <h3>Medical Staff</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </aside>
+        <aside class="section-icon-box__box">
+            <i class="fas fa-ambulance"></i>
+            <h3>Qualified Doctors</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </aside>
+    </div>
+    <div id="clear"></div>
+    <script>
+        function reportWindowSize(getElement, setElement) {
+            document.getElementById(getElement).setAttribute('style','height:' + document.getElementById(setElement).clientHeight + 'px;');
+        }
+        window.onload = reportWindowSize('clear','section-icon-box');
+        window.onresize = reportWindowSize('clear','section-icon-box');
+    </script>
+    <div class="grid chose-us">
+        <div class="chose-us__title">
+            <h2>Why Choose Us?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore ducimus earum eius excepturi inventore molestias porro rerum ullam velit?</p>
+        </div>
+        <div class="chose-us__icons">
+            <div class="chose-us__icons_element">
+               <i class="fas fa-capsules rounded-circle"></i>
+               <h3>Professionals</h3>
+               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+           </div>
+            <div class="chose-us__icons_element">
+                <i class="fas fa-vial rounded-circle"></i>
+                <h3>Professionals</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+        </div>
+        <div class="chose-us__img">
+            <img src="img/nurse.png" alt="Nurse">
+        </div>
+        <div class="chose-us__icons">
+            <div class="chose-us__icons_element">
+                <i class="far fa-hospital rounded-circle"></i>
+                <h3>Professionals</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+            <div class="chose-us__icons_element">
+                <i class="fas fa-stethoscope rounded-circle"></i>
+                <h3>Professionals</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+        </div>
+    </div>
+    <div class="icon-box2" id="icon-box2">
+        <div class="icon-box2__element">
+            <i class="fas fa-diagnoses"></i>
+            <span>1000+</span>
+            <div class="icon-box2__element_border"></div>
+            <h4>Happy Customers</h4>
+        </div>
+        <div class="icon-box2__element">
+            <i class="fas fa-heartbeat"></i>
+            <span>1000+</span>
+            <div class="icon-box2__element_border"></div>
+            <h4>Happy Customers</h4>
+        </div>
+        <div class="icon-box2__element">
+            <i class="fas fa-helicopter"></i>
+            <span>1000+</span>
+            <div class="icon-box2__element_border"></div>
+            <h4>Happy Customers</h4>
+        </div>
+        <div class="icon-box2__element">
+            <i class="fas fa-capsules"></i>
+            <span>1000+</span>
+            <div class="icon-box2__element_border"></div>
+            <h4>Happy Customers</h4>
+        </div>
+    </div>
+    <div id="clear2"></div>
+    <script>
+         window.onload = reportWindowSize('clear2','icon-box2');
+         window.onresize = reportWindowSize('clear2','icon-box2');
+    </script>
+    <div class="how-works">
+        <div class="how-works__title-left">
+            <h2>How we works</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+        <div class="how-works__title-right">
+            <h2>Our creative</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+        <div class="how-works__tabs">
+            <details>
+                <summary>Heart Treatment</summary>
+                <p>Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </details>
+            <details>
+                <summary>Heart Treatment</summary>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </details>
+            <details>
+                <summary>Heart Treatment</summary>
+                <p>Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </details>
+            <details>
+                <summary>Heart Treatment</summary>
+                <p>Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </details>
+        </div>
+        <div class="how-works__posts">
+            <div class="how-works__posts_item">
+                <img src="img/Layer17.jpg" alt="post">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <span>April 19,2020  |  Dr. Jon Doe</span>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+            <div class="how-works__posts_item">
+                <img src="img/Layer18.jpg" alt="post">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <span>April 19,2020  |  Dr. Jon Doe</span>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+        </div>
+        <div class="how-works__button">
+            <button>Read More</button>
+        </div>
+    </div>
+    <div class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <div class="gallery__flip-box">
+            <div class="gallery__flip-box-inner">
+                <div class="gallery__flip-box-front">
+                    <img src="img/01.png">
+                </div>
+                <div class="gallery__flip-box-back">
+                    <h2>Image 01</h2>
+                    <p>Sed ut perspiciatis unde omnis</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__flip-box">
+            <div class="gallery__flip-box-inner">
+                <div class="gallery__flip-box-front">
+                    <img src="img/02.png">
+                </div>
+                <div class="gallery__flip-box-back">
+                    <h2>Image 02</h2>
+                    <p>Sed ut perspiciatis unde omnis</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__flip-box">
+            <div class="gallery__flip-box-inner">
+                <div class="gallery__flip-box-front">
+                    <img src="img/03.png">
+                </div>
+                <div class="gallery__flip-box-back">
+                    <h2>Image 03</h2>
+                    <p>Sed ut perspiciatis unde omnis</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__flip-box">
+            <div class="gallery__flip-box-inner">
+                <div class="gallery__flip-box-front">
+                    <img src="img/04.png">
+                </div>
+                <div class="gallery__flip-box-back">
+                    <h2>Image 04</h2>
+                    <p>Sed ut perspiciatis unde omnis</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__flip-box">
+            <div class="gallery__flip-box-inner">
+                <div class="gallery__flip-box-front">
+                    <img src="img/05.png">
+                </div>
+                <div class="gallery__flip-box-back">
+                    <h2>Image 05</h2>
+                    <p>Sed ut perspiciatis unde omnis</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__flip-box">
+            <div class="gallery__flip-box-inner">
+                <div class="gallery__flip-box-front">
+                    <img src="img/06.png">
+                </div>
+                <div class="gallery__flip-box-back">
+                    <h2>Image 06</h2>
+                    <p>Sed ut perspiciatis unde omnis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="clear3"></div>
+    <script>
+        window.onload = reportWindowSize('clear3','gallery');
+        window.onresize = reportWindowSize('clear3','gallery');
+    </script>
+    <div class="our-team">
+        <h2>Our Team</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <div class="our-team__member">
+            <div class="our-team__member_image">
+                <img src="img/Ellipse-1.png" alt="">
+                <div class="our-team__member_mask">
+                    <a href="#"><button>Register</button></a>
+                </div>
+            </div>
+            <h4>Assistant Surgeon</h4>
+            <span>Assistant Surgeon</span>
+            <div class="our-team__member_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+            </div>
+        </div>
+        <div class="our-team__member">
+            <div class="our-team__member_image">
+                <img src="img/Ellipse-2.png" alt="">
+                <div class="our-team__member_mask">
+                    <a href="#"><button>Register</button></a>
+                </div>
+            </div>
+            <h4>Assistant Surgeon</h4>
+            <span>Assistant Surgeon</span>
+            <div class="our-team__member_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+            </div>
+        </div>
+        <div class="our-team__member">
+            <div class="our-team__member_image">
+                <img src="img/Ellipse-3.png" alt="">
+                <div class="our-team__member_mask">
+                    <a href="#"><button>Register</button></a>
+                </div>
+            </div>
+            <h4>Assistant Surgeon</h4>
+            <span>Assistant Surgeon</span>
+            <div class="our-team__member_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+            </div>
+        </div>
+        <div class="our-team__member">
+            <div class="our-team__member_image">
+                <img src="img/Ellipse-4.png" alt="">
+                <div class="our-team__member_mask">
+                    <a href="#"><button>Register</button></a>
+                </div>
+            </div>
+            <h4>Assistant Surgeon</h4>
+            <span>Assistant Surgeon</span>
+            <div class="our-team__member_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="pre-footer">
+        <h3>New Patient Special Offer Complimentary Consultation</h3>
+        <button>Read More</button>
+    </div>
+    <footer class="footer">
+        <div class="footer__get-in-touch">
+            <h3>Get in Touch</h3>
+            <div class="footer__get-in-touch_element">
+                <i class="far fa-envelope"></i>
+                <div>
+                    <span>free@psdfreebies.com</span>
+                    <span>free@psdfreebies.com</span>
+                </div>
+            </div>
+            <div class="footer__get-in-touch_element">
+                <i class="fas fa-mobile-alt"></i>
+                <div>
+                    <span>+123 456 7890</span>
+                    <span>+123 456 7890</span>
+                </div>
+            </div>
+            <div class="footer__get-in-touch_element">
+                <i class="fas fa-route"></i>
+                <div>
+                    <span>123, Main Road, New City, My Country 123456</span>
+                </div>
+            </div>
+            <div class="footer__get-in-touch_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-500px"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="footer__quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer__our-services">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#">Work Injuries</a></li>
+                <li><a href="#">Sport Injuries</a></li>
+                <li><a href="#">Cold Laser Therapy</a></li>
+                <li><a href="#">Massage Therapy</a></li>
+                <li><a href="#">Physiotherapy</a></li>
+                <li><a href="#">Chiropratic Therapy</a></li>
+            </ul>
+        </div>
+        <div class="footer__enquiry-form">
+            <h3>Enquiry Form</h3>
+            <form action="post">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Phone">
+                <textarea type="text" rows="3" placeholder="Massage"> </textarea>
+                 <input type="Submit" value="Submit">
+            </form>
+        </div>
+        <div class="footer__copyright">
+            <p>Copyright 2020 PSDFreebies.com | Best PSD Template for freelancer and agencies</p>
+        </div>
+    </footer>
 </div>
 
 <!-- Optional JavaScript -->
